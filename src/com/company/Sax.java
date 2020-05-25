@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Sax {
     public enum ValidParams {
-        NAME, GROUP, POSITION, TITUL, TYPE, CATEGORY
+        NAME, STRUCTURE, POSITION, TITLE, TYPE, CATEGORY
     }
 
     private static List<StudentData> students = new ArrayList<>();
@@ -42,13 +42,13 @@ public class Sax {
                     if (queryName.equalsIgnoreCase(ValidParams.NAME.toString())) {
                         bName = true;
                     }
-                    if (queryName.equalsIgnoreCase(ValidParams.GROUP.toString())) {
+                    if (queryName.equalsIgnoreCase(ValidParams.STRUCTURE.toString())) {
                         bStruct = true;
                     }
                     if (queryName.equalsIgnoreCase(ValidParams.POSITION.toString())) {
                         bPosition = true;
                     }
-                    if (queryName.equalsIgnoreCase(ValidParams.TITUL.toString())) {
+                    if (queryName.equalsIgnoreCase(ValidParams.TITLE.toString())) {
                         bTitle = true;
                     }
                     if (queryName.equalsIgnoreCase(ValidParams.TYPE.toString())) {
