@@ -1,4 +1,4 @@
-package com.company;
+package com.company.View.Panels;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,11 +6,11 @@ import java.awt.*;
 public class PanelControl extends JPanel {
     final int WIDTH = 50;
     final int HEIGHT = 25;
-    JButton add;
-    JButton del;
-    JButton find;
+    public JButton add;
+    public JButton del;
+    public JButton find;
 
-    PanelControl(){
+    public PanelControl(){
         setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
         add = new JButton("Добавить");
         add.setMaximumSize(new Dimension(WIDTH, HEIGHT));

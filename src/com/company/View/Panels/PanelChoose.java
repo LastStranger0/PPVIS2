@@ -1,4 +1,4 @@
-package com.company;
+package com.company.View.Panels;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,7 +13,7 @@ public class PanelChoose extends JPanel{
     private JComboBox<String> typeSport;
     private JComboBox<String> category;
 
-    PanelChoose(){
+    public PanelChoose(){
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         createLabels();

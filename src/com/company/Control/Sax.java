@@ -1,5 +1,6 @@
-package com.company;
+package com.company.Control;
 
+import com.company.Model.StudentData;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;

@@ -1,5 +1,12 @@
 package com.company;
 
+import com.company.Control.ControlOfData;
+import com.company.View.Frames.FrameAdd;
+import com.company.View.Frames.FrameDel;
+import com.company.View.Frames.FrameFind;
+import com.company.View.Panels.PanelControl;
+import com.company.View.Panels.PanelMenu;
+import com.company.View.Panels.PanelTable;
 import org.xml.sax.SAXException;
 
 import javax.swing.*;
@@ -108,7 +115,6 @@ public class Main extends JFrame {
         panel.add(menuPanel);
 
         table = new PanelTable(this.control);
-        panel.add(table);
 
         PanelControl controlPanel = new PanelControl();
         controlPanel.del.addActionListener(delListener);
@@ -126,6 +132,7 @@ public class Main extends JFrame {
             add.addStudent();
             table.showTable(this.control);
         });
+        panel.add(table);
 
         add(panel);
         setSize(500, 300);

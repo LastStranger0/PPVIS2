@@ -1,7 +1,10 @@
-package com.company;
+package com.company.View.Frames;
+
+import com.company.Control.ControlOfData;
+import com.company.View.Panels.PanelChoose;
+import com.company.View.Panels.PanelTable;
 
 import javax.swing.*;
-import java.awt.*;
 import java.util.List;
 
 public class FrameFind extends JFrame{
@@ -10,7 +13,7 @@ public class FrameFind extends JFrame{
     private PanelTable table;
     private PanelChoose choose = new PanelChoose();
 
-    FrameFind(ControlOfData COD) {
+    public FrameFind(ControlOfData COD) {
         super("Find");
         this.COD = COD;
         setSize(500,300);

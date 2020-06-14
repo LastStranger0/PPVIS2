@@ -1,4 +1,4 @@
-package com.company;
+package com.company.View.Panels;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +15,7 @@ public class PanelMenu extends JPanel {
     private JMenuItem save;
     private JMenuItem loadFile;
 
-    PanelMenu(){
+    public PanelMenu(){
         setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
         menuBar = new JMenuBar();
         menuBar.setMaximumSize(new Dimension(100, 20));

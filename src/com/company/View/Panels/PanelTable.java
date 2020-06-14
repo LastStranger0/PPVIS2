@@ -1,7 +1,9 @@
-package com.company;
+package com.company.View.Panels;
+
+import com.company.Control.ControlOfData;
+import com.company.Model.StudentData;
 
 import javax.swing.*;
-import java.util.*;
 
 public class PanelTable extends JPanel{
     ControlOfData COD;
@@ -12,7 +14,7 @@ public class PanelTable extends JPanel{
 
     int left, right, pagecounter;
 
-    PanelTable(ControlOfData control){
+    public PanelTable(ControlOfData control){
         this.COD = control;
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         table = new JTable(10, 6);

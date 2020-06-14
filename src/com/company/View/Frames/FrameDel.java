@@ -1,4 +1,7 @@
-package com.company;
+package com.company.View.Frames;
+
+import com.company.Control.ControlOfData;
+import com.company.View.Panels.PanelChoose;
 
 import javax.swing.*;
 import java.awt.*;
@@ -34,7 +37,7 @@ public class FrameDel extends JFrame {
                 Integer.parseInt(list.get(2)), list.get(3), list.get(4));
     }
 
-    FrameDel(ControlOfData control){
+    public FrameDel(ControlOfData control){
         super("Delete");
         this.control = control;
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));

@@ -1,4 +1,7 @@
-package com.company;
+package com.company.View.Frames;
+
+import com.company.Control.ControlOfData;
+import com.company.Model.StudentData;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,10 +15,10 @@ public class FrameAdd extends JFrame {
     JTextField title;
     JComboBox<String> typeSport;
     JComboBox<String> category;
-    JButton add;
+    public JButton add;
 
     ControlOfData COD;
-    FrameAdd(ControlOfData control){
+    public FrameAdd(ControlOfData control){
         super("Add");
         this.COD = control;
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));

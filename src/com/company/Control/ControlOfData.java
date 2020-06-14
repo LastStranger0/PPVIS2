@@ -1,5 +1,6 @@
-package com.company;
+package com.company.Control;
 
+import com.company.Model.StudentData;
 import org.xml.sax.*;
 import javax.xml.parsers.*;
 import java.io.IOException;
@@ -14,7 +15,7 @@ public class ControlOfData {
     private boolean bTypeSport;
 
 
-    ControlOfData(){
+    public ControlOfData(){
         DataTable = new ArrayList<StudentData>();
     }
 

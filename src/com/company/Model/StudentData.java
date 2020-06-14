@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Model;
 
 public class StudentData {
     private String name;
@@ -9,11 +9,11 @@ public class StudentData {
     private String category;
 
 
-    StudentData(){
+    public StudentData(){
 
     }
 
-    StudentData(String Name, String Struct, String Position, int Title, String TypeSport, String Category){
+    public StudentData(String Name, String Struct, String Position, int Title, String TypeSport, String Category){
         this.name = Name;
         this.struct = Struct;
         this.position = Position;
